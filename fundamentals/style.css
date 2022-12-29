@@ -1,0 +1,145 @@
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    
+    margin-left:auto;
+    margin-right:auto;
+}
+h1{
+text-transform: uppercase;
+    font-family:sans-serif;
+
+}
+
+h2{
+    text-align:center;
+}
+
+h1{
+    position:relative;
+}
+h1::after{
+    content: "TOP";
+    background:cornflowerblue;
+    font-size:16px;
+    font-weight:bold;
+    display:inline-block;
+    padding: 5px 10px;
+    position:absolute;
+    top:0;
+    right:0;
+
+}
+aside{
+    background-color:aliceblue;
+}
+li:first-child{
+    font-weight:bold;
+}
+
+li:nth-child(odd){
+    color:red;
+}
+/* misconception: this wont work */
+article p:first-child{
+    color:red;
+}
+/* styling links */
+H1{
+    color:white;
+    margin-top:30px;
+}
+nav{
+    background-color:black;
+    padding:10px;
+    padding:30px 0px 10px 0px;
+    text-align:center;
+}
+.hero-img{
+    position:relative;
+}
+.hoverintro{
+    font-size: 40px;
+    background-color:rgb(255, 255, 255, 60%);
+    padding:20px;
+    border-radius:20px;
+
+}
+
+@media only screen and (min-width:1200px){
+    .hoverintro{position:absolute;
+        bottom:200px;
+        left:100px;}
+       
+        
+}
+
+
+
+a:link{
+    color:white;
+}
+
+nav a{
+    padding-left:10px;
+    padding-right:10px;
+}
+a{
+    text-decoration:none;
+    color:white;
+    font-size: 20px;
+}
+
+a:visited{
+color:white;
+}
+
+a:hover{
+    color:darkcyan;
+    font-weight:bold;
+    text-decoration:underline dotted orange;
+}
+
+a:active{
+    background-color:black;
+    font-style:italic;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+   
+  }
+
+  .badges{
+      display:flex;
+      justify-content: space-around;
+  }
+
+  footer{
+background-color:black;
+  }
+
+  .gallery img{
+    width:30%;
+    margin:.1%;
+    height:250px;
+  }
+
+  @media only screen and (max-width:768px){
+    
+    .badges{flex-direction:column;}
+    .logo{width:100%;}
+    .responsive{width:100%;}
+    
+}
+
+@media only screen and (max-width:1000px){
+    .gallery img{width:50%;}
+
+}
+
+
